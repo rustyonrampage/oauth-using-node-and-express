@@ -152,7 +152,7 @@ function CheckUser(input){
     console.log(input)
   
     for (var i in DATA) {
-        if(input.email==DATA[i].email && (input.password==DATA[i].password || DATA[i].provider==item.provider))
+        if(input.email==DATA[i].email && (input.password==DATA[i].password || DATA[i].provider==input.provider))
         {
             console.log('User found in DATA')
             return true
